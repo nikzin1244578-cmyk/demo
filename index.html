@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Group one</title>
+  <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+  <!-- Background Video -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="./assets/IMG/bg1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- CONTENT OVER VIDEO -->
+  <div class="content">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">
+        <div class="logo-icon">
+        </div>
+        <span style="color: gold;">Group one</span>
+      </div>
+      <div class="nav-buttons">
+        <button id="navLoginBtn" class="nav-btn">Login</button>
+        <button id="navRegisterBtn" class="nav-btn">Register</button>
+        <button id="navLogoutBtn" class="nav-btn hidden">Logout</button>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <div class="container">
+
+        <!-- EMPTY STATE -->
+        <div id="emptyState" class="empty-state">
+        </div>
+
+        <!-- LOGIN FORM -->
+        <div id="loginForm" class="form-container" style="display: none;">
+          <h2>Welcome Back</h2>
+          <p class="subtitle">Login to your account</p>
+          <div id="loginMessage" class="message hidden"></div>
+
+          <form id="loginFormElement">
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" id="loginEmail" required placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+              <label>Password</label>
+              <input type="password" id="loginPassword" required placeholder="Enter your password">
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+          </form>
+
+          <p class="switch-text">
+            Don't have an account?
+            <a class="switch-link" id="switchToRegister">Register here</a>
+          </p>
+        </div>
+
+        <!-- REGISTER FORM -->
+        <div id="registerForm" class="form-container" style="display: none;">
+          <h2>Create Account</h2>
+          <p class="subtitle">Sign up to get started</p>
+          <div id="registerMessage" class="message hidden"></div>
+
+          <form id="registerFormElement">
+            <div class="input-group">
+              <label>Name</label>
+              <input type="text" id="registerName" required placeholder="Enter your name">
+            </div>
+
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" id="registerEmail" required placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+              <label>Password</label>
+              <input type="password" id="registerPassword" required placeholder="Create a password">
+            </div>
+
+            <div class="input-group">
+              <label>Confirm Password</label>
+              <input type="password" id="registerConfirmPassword" required placeholder="Confirm your password">
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+          </form>
+
+          <p class="switch-text">
+            Already have an account?
+            <a class="switch-link" id="switchToLogin">Login here</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="assets/JS/java.js"></script>
+</body>
+
+</html>
